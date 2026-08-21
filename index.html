@@ -3,105 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="성산일출봉을 마주한 제주 오조리의 작은 책방, 오조바닷가책방입니다.">
-  <title>오조바닷가책방</title>
+  <meta name="description" content="성산일출봉을 마주한 제주 오조리의 작은 책방, 오조바닷가책방입니다." data-i18n-content="metaDescription">
+  <title data-i18n="pageTitle">오조바닷가책방</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Song+Myung&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="language.css">
+  <link rel="stylesheet" href="gallery.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">본문 바로가기</a>
-  <div class="announcement">이번 주 책방은 금–월, 낮 12시부터 오후 5시까지 열립니다.</div>
+  <a class="skip-link" href="#main" data-i18n="skipLink">본문 바로가기</a>
+  <div class="announcement" data-i18n="announcement">이번 주 책방은 금–월, 낮 12시부터 오후 5시까지 열립니다.</div>
   <header class="header">
-    <a class="brand" href="#top" aria-label="오조바닷가책방 처음으로">
+    <a class="brand" href="#top" aria-label="오조바닷가책방 처음으로" data-i18n-aria-label="brandLabel">
       <span class="brand-kicker">BOOKSHOP BY THE SEA</span>
       <span class="brand-name">오조바닷가책방</span>
     </a>
-    <nav class="desktop-nav" aria-label="주요 메뉴">
-      <a href="#story">책방 이야기</a><a href="#books">책과 커피</a><a href="#journal">책방 소식</a><a href="#visit">오시는 길</a>
+    <nav class="desktop-nav" aria-label="주요 메뉴" data-i18n-aria-label="mainNavLabel">
+      <a href="#story" data-i18n="navStory">책방 이야기</a><a href="#books" data-i18n="navBooks">책과 커피</a><a href="#journal" data-i18n="navJournal">책방 소식</a><a href="#visit" data-i18n="navVisit">오시는 길</a>
     </nav>
+    <div class="language-switcher" role="group" aria-label="언어 선택" data-i18n-aria-label="languageLabel">
+      <button type="button" data-lang="ko" aria-pressed="true">KO</button><span aria-hidden="true">/</span><button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
     <a class="header-cta" href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer">Instagram ↗</a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
-    <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" hidden>
-      <a href="#story">책방 이야기</a><a href="#books">책과 커피</a><a href="#journal">책방 소식</a><a href="#visit">오시는 길</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span><span class="sr-only" data-i18n="menuOpen">메뉴 열기</span></button>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" data-i18n-aria-label="mobileNavLabel" hidden>
+      <a href="#story" data-i18n="navStory">책방 이야기</a><a href="#books" data-i18n="navBooks">책과 커피</a><a href="#journal" data-i18n="navJournal">책방 소식</a><a href="#visit" data-i18n="navVisit">오시는 길</a>
       <a href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer">Instagram ↗</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <img src="assets/story.webp" alt="책방 정원 너머로 보이는 성산일출봉과 야외 테이블">
+      <img src="assets/story.webp" alt="책방 정원 너머로 보이는 성산일출봉과 야외 테이블" data-i18n-alt="heroAlt">
       <div class="hero-shade"></div>
       <div class="hero-content">
         <p class="eyebrow light">JEJU · OJO-RI</p>
-        <h1>바다 곁에서<br>한 권의 시간을</h1>
-        <p>성산일출봉을 마주한 오조리, 책과 커피가 머무는 작은 공간</p>
-        <a class="button inverse" href="#visit">책방에 오세요</a>
+        <h1 data-i18n="heroTitle">바다 곁에서<br>한 권의 시간을</h1>
+        <p data-i18n="heroDescription">성산일출봉을 마주한 오조리, 책과 커피가 머무는 작은 공간</p>
+        <a class="button inverse" href="#visit" data-i18n="heroButton">책방에 오세요</a>
       </div>
       <div class="hero-side">33°27' N · 126°55' E</div>
-      <a class="scroll-cue" href="#story" aria-label="책방 이야기로 이동">SCROLL <span>↓</span></a>
+      <a class="scroll-cue" href="#story" aria-label="책방 이야기로 이동" data-i18n-aria-label="scrollLabel">SCROLL <span>↓</span></a>
     </section>
 
     <section class="story section" id="story">
       <div class="story-copy">
         <p class="eyebrow">OUR STORY</p>
-        <h2>천천히 읽고,<br>오래 바라보는 곳</h2>
-        <p class="lead">제주 동쪽, 오조리의 바람과 볕이 드는 자리에 책방이 있습니다.</p>
-        <p>고전과 그림책, 소설을 고르고 커피를 내립니다. 책을 사러 오셔도, 잠시 책장을 넘기며 쉬어가셔도 좋습니다. 바다 곁에서 각자의 속도로 머물러 주세요.</p>
-        <a class="text-link" href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer">책방의 오늘 보기 <span>↗</span></a>
+        <h2 data-i18n="storyTitle">천천히 읽고,<br>오래 바라보는 곳</h2>
+        <p class="lead" data-i18n="storyLead">제주 동쪽, 오조리의 바람과 볕이 드는 자리에 책방이 있습니다.</p>
+        <p data-i18n="storyBody">고전과 그림책, 소설을 고르고 커피를 내립니다. 책을 사러 오셔도, 잠시 책장을 넘기며 쉬어가셔도 좋습니다. 바다 곁에서 각자의 속도로 머물러 주세요.</p>
+        <a class="text-link" href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer"><span data-i18n="storyLink">책방의 오늘 보기</span> <span>↗</span></a>
       </div>
       <figure class="story-image">
-        <img src="assets/featured-1.webp" alt="귤나무와 노란 꽃 사이로 보이는 책방 창문">
-        <figcaption>오조리의 계절이 가장 먼저 닿는 창가</figcaption>
+        <img src="assets/featured-1.webp" alt="귤나무와 노란 꽃 사이로 보이는 책방 창문" data-i18n-alt="storyAlt">
+        <figcaption data-i18n="storyCaption">오조리의 계절이 가장 먼저 닿는 창가</figcaption>
       </figure>
     </section>
 
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow">INSIDE & AROUND</p>
+          <h2 id="gallery-title" data-i18n="galleryTitle">책방 안과 밖의 풍경</h2>
+        </div>
+        <p data-i18n="galleryDescription">책이 놓인 따뜻한 실내와<br>바다를 향해 열린 오조리의 풍경입니다.</p>
+      </div>
+      <div class="photo-gallery">
+        <figure class="gallery-photo gallery-photo-wide">
+          <button class="gallery-open" type="button" aria-label="사진 크게 보기" data-i18n-aria-label="galleryOpenLabel"><img src="assets/interior-window.jpg" alt="큰 창으로 바다와 오름이 보이는 책방 내부" data-i18n-alt="galleryWindowAlt" loading="lazy"></button>
+          <figcaption data-i18n="galleryWindowCaption">창 너머 풍경과 함께 머무는 자리</figcaption>
+        </figure>
+        <figure class="gallery-photo gallery-photo-tall">
+          <button class="gallery-open" type="button" aria-label="사진 크게 보기" data-i18n-aria-label="galleryOpenLabel"><img src="assets/interior-books.jpg" alt="책과 조명이 어우러진 책방 내부" data-i18n-alt="galleryBooksAlt" loading="lazy"></button>
+          <figcaption data-i18n="galleryBooksCaption">책으로 가득한 안쪽 공간</figcaption>
+        </figure>
+        <figure class="gallery-photo">
+          <button class="gallery-open" type="button" aria-label="사진 크게 보기" data-i18n-aria-label="galleryOpenLabel"><img src="assets/interior-brick.jpg" alt="벽돌 벽과 책장이 있는 책방 내부" data-i18n-alt="galleryBrickAlt" loading="lazy"></button>
+          <figcaption data-i18n="galleryBrickCaption">벽돌과 나무, 책이 만드는 온기</figcaption>
+        </figure>
+        <figure class="gallery-photo">
+          <button class="gallery-open" type="button" aria-label="사진 크게 보기" data-i18n-aria-label="galleryOpenLabel"><img src="assets/bookshop-cloudy.jpg" alt="흐린 날 오조바닷가책방 표지판과 바다 풍경" data-i18n-alt="galleryCloudyAlt" loading="lazy"></button>
+          <figcaption data-i18n="galleryCloudyCaption">흐린 날에도 고요한 책방 앞</figcaption>
+        </figure>
+        <figure class="gallery-photo gallery-photo-drawing">
+          <button class="gallery-open" type="button" aria-label="사진 크게 보기" data-i18n-aria-label="galleryOpenLabel"><img src="assets/bookshop-drawing.jpg" alt="오조바닷가책방과 주변 풍경을 그린 선화" data-i18n-alt="galleryDrawingAlt" loading="lazy"></button>
+          <figcaption data-i18n="galleryDrawingCaption">선으로 담아낸 오조의 풍경</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <dialog class="gallery-lightbox" aria-label="사진 상세 보기" data-i18n-aria-label="galleryDialogLabel">
+      <button class="gallery-close" type="button" aria-label="닫기" data-i18n-aria-label="galleryCloseLabel">×</button>
+      <figure>
+        <img src="" alt="">
+        <figcaption></figcaption>
+      </figure>
+    </dialog>
+
     <section class="visit" id="visit">
-      <div class="visit-image"><img src="assets/hero.webp" alt="무궁화가 핀 오조바닷가책방 앞마당"></div>
+      <div class="visit-image"><img src="assets/hero.webp" alt="무궁화가 핀 오조바닷가책방 앞마당" data-i18n-alt="visitAlt"></div>
       <div class="visit-copy">
         <p class="eyebrow light">VISIT THE BOOKSHOP</p>
-        <h2>제주 동쪽에서<br>만나요</h2>
+        <h2 data-i18n="visitTitle">제주 동쪽에서<br>만나요</h2>
         <div class="visit-details">
-          <div><span>OPEN</span><p>금 · 토 · 일 · 월<br>12:00 — 17:00</p></div>
-          <div><span>CLOSED</span><p>화 · 수 · 목</p></div>
-          <div><span>ADDRESS</span><p>제주 서귀포시 성산읍 오조로<br>성산일출봉을 마주한 오조리</p></div>
+          <div><span>OPEN</span><p data-i18n="openDays">금 · 토 · 일 · 월<br>12:00 — 17:00</p></div>
+          <div><span>CLOSED</span><p data-i18n="closedDays">화 · 수 · 목</p></div>
+          <div><span>ADDRESS</span><p data-i18n="address">제주 서귀포시 성산읍 오조로<br>성산일출봉을 마주한 오조리</p></div>
         </div>
-        <a class="button inverse" href="https://naver.me/GBl6s8RT" target="_blank" rel="noreferrer">지도에서 길 찾기 ↗</a>
-        <p class="visit-note">방문 전 인스타그램에서 당일 운영 소식을 확인해 주세요.</p>
+        <a class="button inverse" href="https://naver.me/GBl6s8RT" target="_blank" rel="noreferrer" data-i18n="mapButton">지도에서 길 찾기 ↗</a>
+        <p class="visit-note" data-i18n="visitNote">방문 전 인스타그램에서 당일 운영 소식을 확인해 주세요.</p>
       </div>
     </section>
 
     <section class="collection section" id="books">
       <div class="section-heading">
-        <div><p class="eyebrow">BOOKS & COFFEE</p><h2>오조에서 고른 것들</h2></div>
-        <p>한 번 더 펼쳐보고 싶은 책과<br>책 읽는 시간을 위한 커피를 준비합니다.</p>
+        <div><p class="eyebrow">BOOKS & COFFEE</p><h2 data-i18n="collectionTitle">오조에서 고른 것들</h2></div>
+        <p data-i18n="collectionDescription">한 번 더 펼쳐보고 싶은 책과<br>책 읽는 시간을 위한 커피를 준비합니다.</p>
       </div>
       <div class="collection-grid">
-        <article class="collection-card"><img src="assets/featured-2.webp" alt="오조바닷가책방의 어느 봄날 풍경"><p class="number">01</p><h3>시간을 건너온 고전</h3><p>천천히 읽을수록 오래 남는 문장들</p></article>
-        <article class="collection-card"><img src="assets/featured-3.webp" alt="오조바닷가책방의 정원 풍경"><p class="number">02</p><h3>마음을 여는 그림책</h3><p>어른과 아이가 함께 펼치는 이야기</p></article>
-        <article class="collection-card"><img src="assets/event-2.webp" alt="계절의 꽃이 핀 책방 정원"><p class="number">03</p><h3>소설 그리고 커피</h3><p>한 세계에 잠시 머무는 가장 좋은 방법</p></article>
+        <article class="collection-card"><img src="assets/featured-2.webp" alt="오조바닷가책방의 어느 봄날 풍경" data-i18n-alt="classicAlt"><p class="number">01</p><h3 data-i18n="classicTitle">시간을 건너온 고전</h3><p data-i18n="classicDescription">천천히 읽을수록 오래 남는 문장들</p></article>
+        <article class="collection-card"><img src="assets/featured-3.webp" alt="오조바닷가책방의 정원 풍경" data-i18n-alt="pictureAlt"><p class="number">02</p><h3 data-i18n="pictureTitle">마음을 여는 그림책</h3><p data-i18n="pictureDescription">어른과 아이가 함께 펼치는 이야기</p></article>
+        <article class="collection-card"><img src="assets/event-2.webp" alt="계절의 꽃이 핀 책방 정원" data-i18n-alt="novelAlt"><p class="number">03</p><h3 data-i18n="novelTitle">소설 그리고 커피</h3><p data-i18n="novelDescription">한 세계에 잠시 머무는 가장 좋은 방법</p></article>
       </div>
     </section>
 
     <section class="journal" id="journal">
-      <div class="journal-title"><p class="eyebrow">OJO JOURNAL</p><h2>책방의 계절</h2><p>오조리의 볕과 바람, 그리고 책방의 작은 소식을 전합니다.</p></div>
+      <div class="journal-title"><p class="eyebrow">OJO JOURNAL</p><h2 data-i18n="journalTitle">책방의 계절</h2><p data-i18n="journalDescription">오조리의 볕과 바람, 그리고 책방의 작은 소식을 전합니다.</p></div>
       <div class="journal-grid">
-        <a href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer" class="journal-card"><img src="assets/event-1.webp" alt="붉은 꽃이 가득 핀 책방의 봄"><div><span>SEASON NOTE</span><h3>꽃이 먼저 알려준<br>오조리의 봄</h3><p>소식 보기 ↗</p></div></a>
-        <a href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer" class="journal-card"><img src="assets/visit.webp" alt="분홍 꽃이 핀 책방 입구"><div><span>BOOKSHOP NOTE</span><h3>문을 열고 기다리는<br>낮의 시간</h3><p>소식 보기 ↗</p></div></a>
+        <a href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer" class="journal-card"><img src="assets/event-1.webp" alt="붉은 꽃이 가득 핀 책방의 봄" data-i18n-alt="journalSpringAlt"><div><span>SEASON NOTE</span><h3 data-i18n="journalSpringTitle">꽃이 먼저 알려준<br>오조리의 봄</h3><p data-i18n="journalLink">소식 보기 ↗</p></div></a>
+        <a href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer" class="journal-card"><img src="assets/visit.webp" alt="분홍 꽃이 핀 책방 입구" data-i18n-alt="journalDayAlt"><div><span>BOOKSHOP NOTE</span><h3 data-i18n="journalDayTitle">문을 열고 기다리는<br>낮의 시간</h3><p data-i18n="journalLink">소식 보기 ↗</p></div></a>
       </div>
     </section>
 
     <section class="closing">
       <img src="assets/story.webp" alt="" aria-hidden="true"><div class="closing-shade"></div>
-      <div><p class="eyebrow light">A QUIET PLACE BY THE SEA</p><h2>당신의 다음 문장을<br>바다 곁에서 만나세요</h2><a class="button inverse" href="#visit">방문 안내 보기</a></div>
+      <div><p class="eyebrow light">A QUIET PLACE BY THE SEA</p><h2 data-i18n="closingTitle">당신의 다음 문장을<br>바다 곁에서 만나세요</h2><a class="button inverse" href="#visit" data-i18n="closingButton">방문 안내 보기</a></div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-brand"><span>BOOKSHOP BY THE SEA</span><strong>오조바닷가책방</strong></div>
-    <div><p>제주 서귀포시 성산읍 오조로</p><p>금–월 12:00–17:00</p></div>
+    <div><p data-i18n="footerAddress">제주 서귀포시 성산읍 오조로</p><p data-i18n="footerHours">금–월 12:00–17:00</p></div>
     <div class="footer-links"><a href="#story">About</a><a href="#books">Books</a><a href="#visit">Visit</a><a href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
     <p class="copyright">© 2026 OJO BOOKSHOP BY THE SEA</p>
   </footer>
