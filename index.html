@@ -11,16 +11,20 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="language.css">
   <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="brand.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skipLink">본문 바로가기</a>
   <div class="announcement" data-i18n="announcement">이번 주 책방은 금–월, 낮 12시부터 오후 5시까지 열립니다.</div>
   <header class="header">
-    <a class="brand" href="#top" aria-label="오조바닷가책방 처음으로" data-i18n-aria-label="brandLabel">
-      <span class="brand-kicker">BOOKSHOP BY THE SEA</span>
-      <span class="brand-name">오조바닷가책방</span>
-    </a>
+    <div class="brand">
+      <a class="brand-symbol" href="https://blog.naver.com/eddypoo3" target="_blank" rel="noreferrer" aria-label="빈필드하우스 블로그 열기" data-i18n-aria-label="beanfieldLinkLabel"><img src="assets/beanfield-house-logo.png" alt="빈필드하우스 로고" data-i18n-alt="beanfieldLogoAlt"></a>
+      <a class="brand-copy" href="#top" aria-label="오조바닷가책방 처음으로" data-i18n-aria-label="brandLabel">
+        <span class="brand-kicker">BOOKSHOP BY THE SEA</span>
+        <span class="brand-name">오조바닷가책방</span>
+      </a>
+    </div>
     <nav class="desktop-nav" aria-label="주요 메뉴" data-i18n-aria-label="mainNavLabel">
       <a href="#story" data-i18n="navStory">책방 이야기</a><a href="#books" data-i18n="navBooks">책과 커피</a><a href="#journal" data-i18n="navJournal">책방 소식</a><a href="#visit" data-i18n="navVisit">오시는 길</a>
     </nav>
@@ -145,7 +149,13 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-brand"><span>BOOKSHOP BY THE SEA</span><strong>오조바닷가책방</strong></div>
+    <div class="footer-brand">
+      <span>BOOKSHOP BY THE SEA</span><strong>오조바닷가책방</strong>
+      <a class="related-brand" href="https://blog.naver.com/eddypoo3" target="_blank" rel="noreferrer" aria-label="빈필드하우스 블로그 열기" data-i18n-aria-label="beanfieldLinkLabel">
+        <img src="assets/beanfield-house-logo.png" alt="빈필드하우스 로고" data-i18n-alt="beanfieldLogoAlt" loading="lazy">
+        <div><span data-i18n="relatedBrandLabel">함께하는 공간 ↗</span><p data-i18n="relatedBrandNote">빈필드하우스 블로그에서 더 알아보세요.</p></div>
+      </a>
+    </div>
     <div><p data-i18n="footerAddress">제주 서귀포시 성산읍 오조로</p><p data-i18n="footerHours">금–월 12:00–17:00</p></div>
     <div class="footer-links"><a href="#story">About</a><a href="#books">Books</a><a href="#visit">Visit</a><a href="https://www.instagram.com/bookshopbythesea/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
     <p class="copyright">© 2026 OJO BOOKSHOP BY THE SEA</p>
